@@ -1,0 +1,172 @@
+@media screen and (min-width: 580px) {
+	.cvContainerRight {
+		margin-right: 100px;
+		text-align: right;
+		height: 375px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	.cvTitleContainerRight {
+		position: relative;
+		height: 95px;
+		right: -22px;
+		top: 200px;
+	}
+	.cvContentContainerRight {
+		position: relative;
+		height: 40px;
+		right: -22px;
+		top: 185px;
+	}
+	.cvBackNumberContainerRight {
+		position: relative;
+		right: -22px;
+		bottom: 134px;
+	}
+	.cvContainerLeft {
+		margin-left: 100px;
+		text-align: left;
+		height: 375px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	.cvTitleContainerLeft {
+		position: relative;
+		height: 95px;
+		left: -22px;
+		top: 200px;
+	}
+	.cvContentContainerLeft {
+		position: relative;
+		height: 40px;
+		left: -22px;
+		top: 185px;
+	}
+	.cvBackNumberContainerLeft {
+		position: relative;
+		left: -22px;
+		bottom: 134px;
+	}
+	.cvTitle {
+		font-family: 'Lemon Milk Medium';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 70px;
+		line-height: 95px;
+		color: #49a187;
+		margin-block-start: 0em;
+		margin-block-end: 0em;
+	}
+
+	.cvContent {
+		font-family: 'Lemon Milk Light';
+		font-style: normal;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 32px;
+		color: #000000;
+		margin-block-start: 0em;
+		margin-block-end: 0em;
+	}
+
+	.cvBackNumber {
+		font-family: 'Lemon Milk Bold';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 240px;
+		line-height: 240px;
+		color: #0195ba;
+		opacity: 0.1;
+		margin-block-start: 0em;
+		margin-block-end: 0em;
+	}
+}
+@media screen and (max-width: 579px) {
+	.cvContainerRight {
+		margin-right: 5vh;
+		text-align: right;
+		height: 82px;
+		margin-top: 5px;
+		margin-bottom: 53px;
+		width: 60vh;
+	}
+	.cvTitleContainerRight {
+		position: relative;
+		height: 82px;
+		right: -18.4vh;
+		top: 7vh;
+		width: 26vh;
+	}
+	.cvContentContainerRight {
+		position: relative;
+		height: 40px;
+		right: 15.8vh;
+		top: 25px;
+	}
+
+	.cvBackNumberContainerRight {
+		position: relative;
+		right: 134px;
+		bottom: 140px;
+	}
+
+	.cvContainerLeft {
+		margin-left: 5vh;
+		text-align: left;
+		height: 82px;
+		margin-top: 10px;
+		margin-bottom: 24px;
+		width: 60vh;
+	}
+	.cvTitleContainerLeft {
+		position: relative;
+		height: 82px;
+		left: -2.4vh;
+		top: 7vh;
+		width: 28vh;
+	}
+	.cvContentContainerLeft {
+		position: relative;
+		height: 40px;
+		left: -2.4vh;
+		top: 3vh;
+	}
+	.cvBackNumberContainerLeft {
+		position: relative;
+		left: -2.4vh;
+		bottom: 134px;
+	}
+	.cvTitle {
+		font-family: 'Lemon Milk Medium';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 23px;
+		line-height: 31px;
+		color: #49a187;
+		margin-block-start: 0em;
+		margin-block-end: 0em;
+	}
+
+	.cvContent {
+		font-family: 'Lemon Milk Light';
+		font-style: normal;
+		font-weight: 300;
+		font-size: 6px;
+		line-height: 32px;
+		color: #000000;
+		margin-block-start: 0em;
+		margin-block-end: 0em;
+	}
+
+	.cvBackNumber {
+		font-family: 'Lemon Milk Bold';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 80px;
+		/* line-height: 240px; */
+		opacity: 0.1;
+		margin-block-start: 0em;
+		margin-block-end: 0em;
+		color: #0195ba;
+	}
+}

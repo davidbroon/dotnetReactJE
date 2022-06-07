@@ -1,0 +1,159 @@
+@media screen and (min-width: 580px) {
+	#courseOutlineContainer {
+		display: flex;
+		flex-direction: row;
+		margin-left: 5%;
+		margin-right: 5%;
+		flex-wrap: wrap;
+		margin-top: 100px;
+	}
+	.coTitle {
+		font-family: 'Lemon Milk Medium';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 70px;
+		line-height: 95px;
+		text-align: center;
+		color: #000000;
+		margin-bottom: 12%;
+	}
+	.coTopRow {
+		border-top: 4px solid #f4a306;
+	}
+
+	.courseOutlineItem {
+		display: flex;
+		flex-direction: column;
+		min-width: 320px;
+		height: 275px;
+		align-items: flex-start;
+		margin-right: 2%;
+		border-bottom: 4px solid #f4a306;
+	}
+	.courseOutlineContent {
+		font-family: 'Lemon Milk Light';
+		font-style: normal;
+		font-weight: 300;
+		font-size: 20px;
+		position: relative;
+		bottom: 49px;
+	}
+	.courseOutlineBackNumber {
+		font-family: 'Lemon Milk Bold';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 180px;
+		color: #0195ba;
+		opacity: 0.1;
+	}
+	.coContentTwo {
+		font-family: 'Lemon Milk Light';
+		font-style: normal;
+		font-weight: 300;
+		font-size: 45px;
+		line-height: 61px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		margin-top: 52vh;
+		margin-bottom: 50vh;
+		margin-right: 5vh;
+		margin-left: 5vh;
+	}
+
+	#courseOutlineContainer .courseOutlineItem {
+		flex: 1 0 20%;
+		box-sizing: border-box;
+	}
+	@media (min-width: 650px) {
+		#courseOutlineContainer .courseOutlineItem {
+			max-width: 33.333333%;
+		}
+	}
+	@media (min-width: 975px) {
+		#courseOutlineContainer .courseOutlineItem {
+			max-width: 20%;
+		}
+	}
+}
+
+@media screen and (max-width: 579px) {
+	#courseOutlineContainer {
+		display: flex;
+		flex-direction: row;
+		margin-left: 5%;
+		margin-right: 5%;
+		flex-wrap: wrap;
+		margin-top: 100px;
+		justify-content: center;
+	}
+	.coTitle {
+		font-family: 'Lemon Milk Medium';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 35px;
+		line-height: 47px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		color: #000000;
+		margin-bottom: 15%;
+	}
+	.courseOutlineItem {
+		display: flex;
+		flex-direction: column;
+		min-width: 215px;
+		height: 135px;
+		align-items: center;
+		margin-right: 2%;
+		border-bottom: 4px solid #f4a306;
+	}
+	.coTopRowSmallScreen {
+		border-top: 4px solid #f4a306;
+	}
+	.courseOutlineContent {
+		font-family: 'Lemon Milk Light';
+		font-style: normal;
+		font-weight: 300;
+		font-size: 14px;
+		position: relative;
+		bottom: 36px;
+	}
+	.courseOutlineBackNumber {
+		font-family: 'Lemon Milk Bold';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 90px;
+		color: #0195ba;
+		opacity: 0.1;
+	}
+	.coContentTwo {
+		font-family: 'Lemon Milk Light';
+		font-style: normal;
+		font-weight: 300;
+		font-size: 22px;
+		line-height: 30px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		margin-top: 5vh;
+		margin-right: 32px;
+		margin-left: 32px;
+		margin-bottom: 25vh;
+	}
+	.coLine {
+		display: flex;
+		flex-direction: column;
+		align-self: center;
+		gap: 10px;
+		width: 3px;
+		height: 89px;
+		background-color: #f4a306;
+	}
+	.coLineContainer {
+		width: -webkit-fill-available;
+		text-align: -webkit-center;
+		margin-bottom: 59px;
+		margin-top: 59px;
+	}
+}
