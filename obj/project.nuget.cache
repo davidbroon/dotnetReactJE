@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "G+3nfkqq+1VCeOEIJSC1A5imL1wSzoYF15IsiHEjIQwfHHKzygl1wCqqgVwepicoDrMN/06Bo9wJ3DjXJVRCRQ==",
+  "success": true,
+  "projectFilePath": "/Users/dtbrown/Repos/react-dotnet-example/react-dotnet-example.csproj",
+  "expectedPackageFiles": [
+    "/Users/dtbrown/.nuget/packages/microsoft.aspnetcore.spaservices.extensions/5.0.3/microsoft.aspnetcore.spaservices.extensions.5.0.3.nupkg.sha512",
+    "/Users/dtbrown/.nuget/packages/microsoft.extensions.fileproviders.abstractions/5.0.0/microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",
+    "/Users/dtbrown/.nuget/packages/microsoft.extensions.fileproviders.physical/5.0.0/microsoft.extensions.fileproviders.physical.5.0.0.nupkg.sha512",
+    "/Users/dtbrown/.nuget/packages/microsoft.extensions.filesystemglobbing/5.0.0/microsoft.extensions.filesystemglobbing.5.0.0.nupkg.sha512",
+    "/Users/dtbrown/.nuget/packages/microsoft.extensions.primitives/5.0.0/microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
