@@ -1,0 +1,32 @@
+@media screen and (min-width: 580px) {
+	.svgContainerHome {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		top: 0;
+	}
+	svg {
+		position: absolute;
+		left: 2.3%;
+		top: -50%;
+	}
+	.path {
+		stroke-dasharray: 1;
+		stroke-dashoffset: 1;
+		animation: dash 5s forwards;
+	}
+
+	@keyframes dash {
+		from {
+			stroke-dashoffset: 1;
+		}
+		to {
+			stroke-dashoffset: 0;
+		}
+	}
+}
+@media screen and (max-width: 579px) {
+	svg {
+		display: none;
+	}
+}
