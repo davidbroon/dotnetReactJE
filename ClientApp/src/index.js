@@ -6,10 +6,8 @@ import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
-import './assets/fonts/lemon_milk/LEMONMILK-Light.otf';
-import './assets/fonts/lemon_milk/LEMONMILK-Medium.otf';
-import './assets/fonts/lemon_milk/LEMONMILK-Bold.otf';
-import './assets/fonts/lemon_milk/LEMONMILK-Regular.otf';
+import './assets/fonts/LEMONMILK-Medium.otf';
+import './assets/fonts/LEMONMILK-Bold.otf';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

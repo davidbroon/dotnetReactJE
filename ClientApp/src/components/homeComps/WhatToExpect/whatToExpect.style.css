@@ -5,7 +5,7 @@
 		margin-top: -8vh;
 	}
 	.wteHeader {
-		font-family: 'Lemon Milk Medium';
+		font-family: 'articulat-cf';
 		font-style: normal;
 		font-weight: 500;
 		font-size: 70px;
@@ -27,7 +27,7 @@
 		margin-bottom: 15px;
 	}
 	.wteContentOneTitle {
-		font-family: 'Lemon Milk';
+		font-family: 'articulat-cf';
 		font-style: normal;
 		font-weight: 300;
 		font-size: 50px;
@@ -52,7 +52,7 @@
 		margin-left: 2px;
 	}
 	.wteContentOneContent {
-		font-family: 'Lemon Milk Light';
+		font-family: 'articulat-cf';
 		font-style: normal;
 		font-weight: 300;
 		font-size: 18px;
@@ -90,7 +90,7 @@
 		margin-bottom: 15vh;
 	}
 	.wteHeader {
-		font-family: 'Lemon Milk Medium';
+		font-family: 'articulat-cf';
 		font-weight: 500;
 		font-size: 35px;
 		line-height: 47px;
@@ -107,7 +107,7 @@
 		margin-bottom: 15px;
 	}
 	.wteContentOneTitle {
-		font-family: 'Lemon Milk';
+		font-family: 'articulat-cf';
 		font-style: normal;
 		display: flex;
 		justify-content: space-evenly;
@@ -138,7 +138,7 @@
 		background: #00ffb4;
 	}
 	.wteContentOneContent {
-		font-family: 'Lemon Milk Light';
+		font-family: 'articulat-cf';
 		font-style: normal;
 		font-weight: 300;
 		font-size: 18px;

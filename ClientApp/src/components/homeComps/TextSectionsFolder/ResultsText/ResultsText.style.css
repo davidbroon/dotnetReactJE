@@ -1,5 +1,5 @@
 @media screen and (min-width: 580px) {
-	.whoAreWeParagraph {
+	.ResultsTextParagraph {
 		background: linear-gradient(
 			179.57deg,
 			#e5e5e4 0.37%,
@@ -15,9 +15,9 @@
 		padding-left: 226px;
 		padding-right: 226px;
 		padding-top: 24px;
-		margin-bottom: -8%;
+		margin-bottom: 15%;
 	}
-	.whoAreWeLine {
+	.ResultsTextLine {
 		display: flex;
 		flex-direction: column;
 		align-self: center;
@@ -27,14 +27,14 @@
 		height: 222px;
 		background-color: #f4a306;
 	}
-	.whoAreWeContainer {
+	.ResultsTextContainer {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 	}
 }
 @media screen and (max-width: 579px) {
-	.whoAreWeParagraph {
+	.ResultsTextParagraph {
 		background: linear-gradient(
 			179.57deg,
 			#e5e5e4 0.37%,
@@ -44,28 +44,12 @@
 		font-style: normal;
 		font-weight: 300;
 		font-size: 14px;
-		line-height: 19px;
+		line-height: 17px;
 		text-align: center;
 		min-height: 244px;
-		padding-left: 5vh;
-		padding-right: 5vh;
+		padding-left: 16%;
+		padding-right: 16%;
 		padding-top: 24px;
-		/* margin-top: 10vh; */
-		margin-bottom: -33%;
-	}
-	.whoAreWeLine {
-		display: flex;
-		flex-direction: column;
-		align-self: center;
-		gap: 10px;
-		width: 3px;
-		max-height: 115px;
-		height: 115px;
-		background-color: #f4a306;
-	}
-	.whoAreWeContainer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		margin-bottom: 12%;
 	}
 }

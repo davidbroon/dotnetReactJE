@@ -1,0 +1,42 @@
+Fonts added:
+
+Articulat CF Extra Light
+
+font-family: articulat-cf, sans-serif;
+
+font-weight: 200;
+
+font-style: normal;
+
+
+
+Articulat CF Normal
+
+font-family: articulat-cf, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+
+Articulat CF Medium
+
+font-family: articulat-cf, sans-serif;
+
+font-weight: 600;
+
+font-style: normal;
+
+
+
+Articulat CF Bold
+
+font-family: articulat-cf, sans-serif;
+
+font-weight: 800;
+
+font-style: normal;
+
+
+

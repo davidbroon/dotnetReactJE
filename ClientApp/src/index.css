@@ -12,22 +12,14 @@ code {
 		monospace;
 }
 @font-face {
-	font-family: 'Lemon Milk';
-	src: local('Lemon Milk'),
-		url(./assets/fonts/lemon_milk/LEMONMILK-Regular.otf) format('truetype');
+	font-family: 'LemonmilkBold';
+	src: local('LemonmilkBold'),
+		url('../src/assets/fonts/LEMONMILK-Bold.otf') format('truetype');
+	font-weight: bold;
 }
 @font-face {
-	font-family: 'Lemon Milk Light';
-	src: local('Lemon Milk Light'),
-		url(./assets/fonts/lemon_milk/LEMONMILK-Light.otf) format('truetype');
-}
-@font-face {
-	font-family: 'Lemon Milk Medium';
-	src: local('Lemon Milk Medium'),
-		url(./assets/fonts/lemon_milk/LEMONMILK-Medium.otf) format('truetype');
-}
-@font-face {
-	font-family: 'Lemon Milk Bold';
-	src: local('Lemon Milk Bold'),
-		url(./assets/fonts/lemon_milk/LEMONMILK-Bold.otf) format('truetype');
+	font-family: 'LemonmilkMedium';
+	src: local('LemonmilkMedium'),
+		url('../src/assets/fonts/LEMONMILK-Medium.otf') format('truetype');
+	font-weight: 600;
 }

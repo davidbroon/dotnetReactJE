@@ -24,9 +24,47 @@
 			stroke-dashoffset: 0;
 		}
 	}
+	.coreValueContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.cvLine {
+		display: flex;
+		flex-direction: column;
+		align-self: center;
+		gap: 10px;
+		width: 6px;
+		/* max-height: 115px; */
+		height: 526px;
+		background: linear-gradient(
+			180deg,
+			rgba(244, 163, 6, 0) 16.15%,
+			#f4a306 100%
+		);
+	}
 }
 @media screen and (max-width: 579px) {
 	svg {
 		display: none;
+	}
+	.coreValueContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.cvLine {
+		display: flex;
+		flex-direction: column;
+		align-self: center;
+		gap: 10px;
+		width: 3px;
+		/* max-height: 115px; */
+		height: 163px;
+		background: linear-gradient(
+			180deg,
+			rgba(244, 163, 6, 0) 16.15%,
+			#f4a306 100%
+		);
 	}
 }

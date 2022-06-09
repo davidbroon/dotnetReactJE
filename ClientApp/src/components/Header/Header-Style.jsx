@@ -28,10 +28,9 @@ export const HeaderStyle = styled.header`
 		height: 80px;
 		margin-bottom: 0;
 		// margin-right: 40px;
-		color: #fff;
 
 		li {
-			font-family: 'Lemon Milk Light';
+			font-family: 'articulat-cf';
 			font-style: normal;
 			font-weight: 300;
 			font-size: 18px;

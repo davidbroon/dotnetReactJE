@@ -24,7 +24,7 @@
 	ul {
 		margin: 0;
 		padding: 0;
-		font-family: 'Lemon Milk';
+		font-family: 'articulat-cf';
 		font-weight: normal;
 	}
 
@@ -138,7 +138,7 @@
 		background-color: #49a187;
 		color: white;
 		cursor: pointer;
-		font-family: 'Lemon Milk';
+		font-family: 'articulat-cf';
 		padding: 10px 8px;
 		border-radius: 4px;
 		border: 1px solid #49a187;
@@ -162,22 +162,29 @@
 		border-radius: 8px;
 		height: 75px;
 		width: 300px;
-		background-color: #fff;
+		background: transparent;
 		color: #000;
-		font-family: 'Lemon Milk Light';
+		font-family: 'articulat-cf';
 		font-size: 20px;
-		line-height: 27px;
+		line-height: 24px;
 		border: 6px solid #f4a306;
-		font-weight: 300;
-		box-shadow: '0px 4px 4px rgba(0, 0, 0, 0.25)';
-		margin-bottom: 15px;
+		font-weight: 800;
+		/* box-shadow: '0px 4px 4px rgba(0, 0, 0, 0.25)'; */
+		border-color: #f4a306;
+		color: #fff;
+		box-shadow: 0 0 40px 40px #f4a306 inset, 0 0 0 0 #f4a306;
+		-webkit-transition: all 150ms ease-in-out;
+		transition: all 150ms ease-in-out;
 	}
 	.styleButton:hover {
-		background-color: #f4a306;
+		background: transparent;
 		border: '1px solid #0195BA';
+		color: #000;
+		box-shadow: 0 0 10px 0 #f4a306 inset, 0 0 10px 4px #f4a306;
 	}
 	.styleButton:focus {
-		background-color: #f4a306;
+		background: transparent;
+		color: #000;
 		border: '1px solid #0195BA';
 	}
 	.styleButton:active {
@@ -190,23 +197,37 @@
 		cursor: 'not-allowed';
 		pointer-events: 'visible';
 	}
+	html,
+	body {
+		height: 100%;
+	}
+	/* 
 	.buttonLineTop {
 		width: 6px;
 		max-height: 400px;
 		position: relative;
 		height: 115px;
-		background-color: #f4a306;
+		background: linear-gradient(
+			180deg,
+			rgba(244, 163, 6, 0) 16.15%,
+			#f4a306 100%
+		);
 		bottom: 115px;
 		left: 151px;
-	}
+	}*/
 	.buttonLineTopLarge {
 		width: 6px;
-		max-height: 400px;
+		/* max-height: 300px;  */
 		position: relative;
-		height: 326px;
-		background-color: #f4a306;
-		bottom: 323px;
+		height: 360px;
+		background: linear-gradient(
+			180deg,
+			rgba(244, 163, 6, 0) 16.15%,
+			#f4a306 100%
+		);
+		bottom: 358px;
 		left: 150px;
+		margin-bottom: -248px;
 	}
 }
 @media screen and (max-width: 579px) {
@@ -222,22 +243,29 @@
 		width: 25vh;
 		gap: 10px;
 		background-color: #fff;
-		color: #000;
-		font-family: 'Lemon Milk Light';
+		color: #fff;
+		font-family: 'articulat-cf';
 		font-size: 14px;
-		line-height: 14px;
+		line-height: 12px;
 		border: 3px solid #f4a306;
-		font-weight: 300;
+		font-weight: 800;
 		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 		margin-bottom: 15px;
+		box-shadow: 0 0 40px 40px #f4a306 inset, 0 0 0 0 #f4a306;
+		-webkit-transition: all 150ms ease-in-out;
+		transition: all 150ms ease-in-out;
 	}
 	.styleButton:hover {
-		background-color: #f4a306;
-		border: 1px solid #0195ba;
+		background: transparent;
+		border: '1px solid #0195BA';
+		color: #000;
+		box-shadow: 0 0 10px 0 #f4a306 inset, 0 0 10px 4px #f4a306;
 	}
 	.styleButton:focus {
-		background-color: #f4a306;
+		background: transparent;
+		color: #000;
 		border: '1px solid #0195BA';
+		box-shadow: 0 0 10px 0 #f4a306 inset, 0 0 10px 4px #f4a306;
 	}
 	.styleButton:active {
 		border: 1px solid #0195ba;
@@ -264,7 +292,11 @@
 		max-height: 400px;
 		position: relative;
 		height: 22vh;
-		background-color: #f4a306;
+		background: linear-gradient(
+			180deg,
+			rgba(244, 163, 6, 0) 16.15%,
+			#f4a306 100%
+		);
 		bottom: 21.5vh;
 		left: 13.3vh;
 	}
@@ -294,7 +326,7 @@
 	ul {
 		margin: 0;
 		padding: 0;
-		font-family: 'Lemon Milk';
+		font-family: 'articulat-cf';
 		font-weight: normal;
 	}
 
@@ -408,7 +440,7 @@
 		background-color: #49a187;
 		color: white;
 		cursor: pointer;
-		font-family: 'Lemon Milk';
+		font-family: 'articulat-cf';
 		padding: 10px 8px;
 		border-radius: 4px;
 		border: 1px solid #49a187;

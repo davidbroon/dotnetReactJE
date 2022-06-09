@@ -1,165 +1,222 @@
 @media screen and (min-width: 580px) {
+	.cv {
+		position: relative;
+		height: fit-content;
+	}
 	.cvContainerRight {
+		/* height: 375px; */
+
 		margin-right: 100px;
 		text-align: right;
-		height: 375px;
-		margin-top: 5px;
+		height: fit-content;
+		margin-top: -75px;
 		margin-bottom: 5px;
 	}
 	.cvTitleContainerRight {
+		/* position: relative;
+		height: 95px;
+		right: -22px;
+		top: 200px; */
 		position: relative;
 		height: 95px;
 		right: -22px;
-		top: 200px;
+		top: -103px;
 	}
 	.cvContentContainerRight {
-		position: relative;
+		/* position: relative;
 		height: 40px;
-		right: -22px;
+		right: -51%;
 		top: 185px;
+		width: 50%; */
+		position: relative;
+		height: fit-content;
+		right: -51%;
+		top: -127px;
+		width: 50%;
 	}
 	.cvBackNumberContainerRight {
-		position: relative;
+		/* position: relative;
 		right: -22px;
-		bottom: 134px;
+		bottom: 74px; */
 	}
 	.cvContainerLeft {
 		margin-left: 100px;
 		text-align: left;
-		height: 375px;
-		margin-top: 5px;
+		/* height: 375px; */
+		margin-top: -75px;
 		margin-bottom: 5px;
+		height: fit-content;
 	}
 	.cvTitleContainerLeft {
+		/* position: relative;
+		height: 95px;
+		left: -22px;
+		top: 200px; */
 		position: relative;
 		height: 95px;
 		left: -22px;
-		top: 200px;
+		top: -105px;
 	}
 	.cvContentContainerLeft {
-		position: relative;
+		/* position: relative;
 		height: 40px;
 		left: -22px;
 		top: 185px;
+		width: 50%; */
+		position: relative;
+		height: fit-content;
+		left: -22px;
+		top: -128px;
+		width: 50%;
 	}
 	.cvBackNumberContainerLeft {
-		position: relative;
+		/* position: relative;
 		left: -22px;
-		bottom: 134px;
+		bottom: 74px; */
 	}
 	.cvTitle {
-		font-family: 'Lemon Milk Medium';
+		font-family: 'articulat-cf';
 		font-style: normal;
-		font-weight: 500;
+		text-transform: uppercase;
+		font-weight: 800;
 		font-size: 70px;
-		line-height: 95px;
-		color: #49a187;
+		line-height: 84px;
+		/* identical to box height */
+		color: #f6a21c;
 		margin-block-start: 0em;
 		margin-block-end: 0em;
 	}
 
 	.cvContent {
-		font-family: 'Lemon Milk Light';
+		font-family: 'articulat-cf';
 		font-style: normal;
 		font-weight: 300;
 		font-size: 18px;
 		line-height: 32px;
+		/* or 178% */
 		color: #000000;
 		margin-block-start: 0em;
 		margin-block-end: 0em;
 	}
 
 	.cvBackNumber {
-		font-family: 'Lemon Milk Bold';
+		font-family: 'lemonmilkbold';
 		font-style: normal;
-		font-weight: 700;
+		font-weight: 900;
 		font-size: 240px;
 		line-height: 240px;
-		color: #0195ba;
+		/* identical to box height, or 100% */
+		color: #17223c;
 		opacity: 0.1;
 		margin-block-start: 0em;
 		margin-block-end: 0em;
 	}
+
+	.cvContainerLeft.reveal {
+		position: relative;
+		transform: translateX(-150px);
+		opacity: 0;
+		transition: 1s all ease;
+	}
+	.cvContainerRight.reveal {
+		position: relative;
+		transform: translateX(150px);
+		opacity: 0;
+		transition: 1s all ease;
+	}
+
+	.reveal.active {
+		transform: translateX(0);
+		opacity: 1;
+	}
 }
 @media screen and (max-width: 579px) {
+	.cv {
+		position: relative;
+		height: fit-content;
+		margin-top: -4vh;
+	}
 	.cvContainerRight {
-		margin-right: 5vh;
 		text-align: right;
-		height: 82px;
-		margin-top: 5px;
-		margin-bottom: 53px;
-		width: 60vh;
+		height: -moz-fit-content;
+		height: fit-content;
+		display: flex;
+		flex-direction: column;
+		margin-left: 15%;
+		margin-right: 15%;
 	}
 	.cvTitleContainerRight {
 		position: relative;
 		height: 82px;
-		right: -18.4vh;
-		top: 7vh;
+		right: -6.4vh;
+		top: -5vh;
 		width: 26vh;
 	}
 	.cvContentContainerRight {
 		position: relative;
-		height: 40px;
-		right: 15.8vh;
-		top: 25px;
+		height: fit-content;
+		top: -7vh;
 	}
 
 	.cvBackNumberContainerRight {
-		position: relative;
+		/* position: relative;
 		right: 134px;
-		bottom: 140px;
+		bottom: 140px; */
 	}
 
 	.cvContainerLeft {
-		margin-left: 5vh;
 		text-align: left;
-		height: 82px;
-		margin-top: 10px;
-		margin-bottom: 24px;
-		width: 60vh;
+		height: -moz-fit-content;
+		height: fit-content;
+		display: flex;
+		flex-direction: column;
+		margin-left: 15%;
+		margin-right: 15%;
 	}
 	.cvTitleContainerLeft {
 		position: relative;
 		height: 82px;
-		left: -2.4vh;
-		top: 7vh;
+		/* left: 0.6vh; */
+		top: -5vh;
 		width: 28vh;
 	}
 	.cvContentContainerLeft {
 		position: relative;
-		height: 40px;
-		left: -2.4vh;
-		top: 3vh;
+		height: -moz-fit-content;
+		height: fit-content;
+		top: -7vh;
 	}
 	.cvBackNumberContainerLeft {
-		position: relative;
+		/* position: relative;
 		left: -2.4vh;
-		bottom: 134px;
+		bottom: 134px; */
 	}
 	.cvTitle {
-		font-family: 'Lemon Milk Medium';
+		font-family: 'articulat-cf';
 		font-style: normal;
-		font-weight: 500;
-		font-size: 23px;
-		line-height: 31px;
-		color: #49a187;
+		font-weight: 800;
+		font-size: 28px;
+		line-height: 34px;
+		text-transform: uppercase;
+		color: #f6a21c;
 		margin-block-start: 0em;
 		margin-block-end: 0em;
 	}
 
 	.cvContent {
-		font-family: 'Lemon Milk Light';
+		font-family: 'articulat-cf';
 		font-style: normal;
 		font-weight: 300;
-		font-size: 6px;
-		line-height: 32px;
+		font-size: 14px;
+		line-height: 22px;
+		/* or 157% */
 		color: #000000;
 		margin-block-start: 0em;
 		margin-block-end: 0em;
 	}
 
 	.cvBackNumber {
-		font-family: 'Lemon Milk Bold';
+		font-family: 'lemonmilkbold';
 		font-style: normal;
 		font-weight: 700;
 		font-size: 80px;
@@ -168,5 +225,22 @@
 		margin-block-start: 0em;
 		margin-block-end: 0em;
 		color: #0195ba;
+	}
+	.cvContainerLeft.reveal {
+		position: relative;
+		transform: translateX(-150px);
+		opacity: 0;
+		transition: 1s all ease;
+	}
+	.cvContainerRight.reveal {
+		position: relative;
+		transform: translateX(150px);
+		opacity: 0;
+		transition: 1s all ease;
+	}
+
+	.reveal.active {
+		transform: translateX(0);
+		opacity: 1;
 	}
 }

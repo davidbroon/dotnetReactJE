@@ -7,6 +7,7 @@ import './waitListForm.style.css';
 const WaitListForm = (borderLine) => {
 	const [open, setOpen] = useState(false);
 	const [display, setDisplay] = useState('none');
+	const [bgColor, setBgColor] = useState('transparent');
 
 	useEffect(() => {
 		open ? setDisplay('inline-flex') : setDisplay('none');
@@ -63,14 +64,10 @@ const WaitListForm = (borderLine) => {
 	}, [values.email, setFieldValue]);
 
 	return (
-		<>
+		<div className='formAndButtonContainer'>
 			<div className='openFormButton' onClick={() => setOpen(!open)}>
 				<div className={borderLine}></div>
-				<Button
-					type='button'
-					className='styleButton'
-					onClick={() => console.log('resfsd')}
-				>
+				<Button type='button' className='styleButton'>
 					Register Your Interest
 				</Button>
 			</div>
@@ -136,7 +133,7 @@ const WaitListForm = (borderLine) => {
 					</div>
 				</form>
 			</div>
-		</>
+		</div>
 	);
 };
 

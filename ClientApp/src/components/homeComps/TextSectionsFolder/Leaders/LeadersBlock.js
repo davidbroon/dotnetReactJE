@@ -23,9 +23,9 @@ const LeadersBlock = () => {
 				has placed on your life, by serving in one or more of our church
 				ministry teams to bless and transform our local community.
 			</p>
-			<div className='leaderLineContainer'>
+			{/* <div className='leaderLineContainer'>
 				<div className='leaderLine'></div>
-			</div>
+			</div> */}
 		</>
 	);
 };

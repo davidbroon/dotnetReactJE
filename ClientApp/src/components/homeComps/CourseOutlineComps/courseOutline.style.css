@@ -5,16 +5,18 @@
 		margin-left: 5%;
 		margin-right: 5%;
 		flex-wrap: wrap;
-		margin-top: 100px;
+		margin-top: 10%;
+		justify-content: space-around;
+		margin-bottom: 5%;
 	}
 	.coTitle {
-		font-family: 'Lemon Milk Medium';
+		font-family: 'articulat-cf';
 		font-style: normal;
-		font-weight: 500;
+		font-weight: 800;
 		font-size: 70px;
-		line-height: 95px;
+		line-height: 84px;
 		text-align: center;
-		color: #000000;
+		color: #17223c;
 		margin-bottom: 12%;
 	}
 	.coTopRow {
@@ -24,30 +26,33 @@
 	.courseOutlineItem {
 		display: flex;
 		flex-direction: column;
-		min-width: 320px;
-		height: 275px;
+		height: 257px;
+		/* width: 22%; */
 		align-items: flex-start;
-		margin-right: 2%;
+		margin-right: 1%;
+		margin-left: 1%;
 		border-bottom: 4px solid #f4a306;
 	}
 	.courseOutlineContent {
-		font-family: 'Lemon Milk Light';
+		font-family: 'articulat-cf';
 		font-style: normal;
 		font-weight: 300;
-		font-size: 20px;
-		position: relative;
-		bottom: 49px;
+		font-size: 25px;
+		margin-top: -60px;
+		color: #000000;
 	}
 	.courseOutlineBackNumber {
-		font-family: 'Lemon Milk Bold';
+		font-family: 'articulat-cf';
 		font-style: normal;
 		font-weight: 700;
 		font-size: 180px;
-		color: #0195ba;
+		line-height: 240px;
+		/* identical to box height, or 133% */
+		color: #17223c;
 		opacity: 0.1;
 	}
 	.coContentTwo {
-		font-family: 'Lemon Milk Light';
+		font-family: 'articulat-cf';
 		font-style: normal;
 		font-weight: 300;
 		font-size: 45px;
@@ -72,7 +77,7 @@
 	}
 	@media (min-width: 975px) {
 		#courseOutlineContainer .courseOutlineItem {
-			max-width: 20%;
+			max-width: 22%;
 		}
 	}
 }
@@ -84,51 +89,61 @@
 		margin-left: 5%;
 		margin-right: 5%;
 		flex-wrap: wrap;
-		margin-top: 100px;
+		margin-top: 56px;
+		margin-bottom: 75px;
 		justify-content: center;
 	}
 	.coTitle {
-		font-family: 'Lemon Milk Medium';
+		font-family: 'articulat-cf';
 		font-style: normal;
-		font-weight: 500;
-		font-size: 35px;
-		line-height: 47px;
+		font-weight: 800;
+		font-size: 28px;
+		line-height: 34px;
 		display: flex;
 		align-items: center;
 		text-align: center;
 		color: #000000;
 		margin-bottom: 15%;
+		justify-content: center;
 	}
 	.courseOutlineItem {
 		display: flex;
 		flex-direction: column;
-		min-width: 215px;
-		height: 135px;
-		align-items: center;
-		margin-right: 2%;
-		border-bottom: 4px solid #f4a306;
+		height: 52px;
+		align-items: flex-start;
+		margin-right: 3%;
+		margin-left: 3%;
+		width: 100%;
+		border-bottom: 3px solid #f4a306;
+		justify-content: end;
 	}
 	.coTopRowSmallScreen {
-		border-top: 4px solid #f4a306;
+		border-top: 3px solid #f4a306;
 	}
 	.courseOutlineContent {
-		font-family: 'Lemon Milk Light';
+		font-family: 'articulat-cf';
 		font-style: normal;
 		font-weight: 300;
-		font-size: 14px;
-		position: relative;
-		bottom: 36px;
+		font-size: 15px;
+		display: flex;
+		align-items: center;
+		color: #000000;
+		margin-left: 50px;
 	}
 	.courseOutlineBackNumber {
-		font-family: 'Lemon Milk Bold';
+		font-family: 'lemonmilkbold';
 		font-style: normal;
 		font-weight: 700;
-		font-size: 90px;
+		font-size: 40px;
+		display: flex;
+		align-items: center;
 		color: #0195ba;
 		opacity: 0.1;
+		margin-left: 50px;
+		margin-bottom: -27px;
 	}
 	.coContentTwo {
-		font-family: 'Lemon Milk Light';
+		font-family: 'articulat-cf';
 		font-style: normal;
 		font-weight: 300;
 		font-size: 22px;

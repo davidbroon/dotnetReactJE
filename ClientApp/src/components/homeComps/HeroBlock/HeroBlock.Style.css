@@ -11,35 +11,37 @@
 
 	.heroContainer {
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		flex-direction: column;
 		height: -webkit-fill-available;
-		/* top: 40vh;
-	position: absolute;
-	left: 50vh; */
+		margin-top: 0px;
 	}
 	.heroTitleText {
-		font-family: 'Lemon Milk Light';
+		font-family: 'articulat-cf';
+		font-weight: 800;
+		font-size: 100px;
+		line-height: 136px;
+		text-align: center;
 		color: #ffffff;
-		line-height: 85px;
-		font-size: 85px;
+		text-transform: capitalize;
 	}
 
 	.heroTextContainer {
-		font-family: 'Lemon Milk Light';
+		font-family: 'articulat-cf';
 		color: #ffffff;
 		font-style: normal;
 		font-weight: 300;
 		font-size: 60px;
 		line-height: 81px;
 		text-align: center;
-		max-height: 160px;
-		height: 14vh;
+		/* max-height: 160px; */
+		/* height: 14vh; */
 		display: flex;
 		padding-right: 10%;
 		padding-left: 10%;
-		padding-bottom: 17%;
-		align-items: center;
+		padding-bottom: 3%;
+		/* margin-top: -6%; */
+		align-items: flex-start;
 		justify-content: space-around;
 	}
 
@@ -49,15 +51,65 @@
 		align-self: center;
 		gap: 10px;
 		width: 6px;
-		max-height: 400px;
-		height: 45vh;
+		max-height: 222px;
+		height: 60px;
 	}
 
 	.heroButtonAndLine {
-		position: absolute;
+		/* position: absolute; */
 		width: -webkit-fill-available;
 		text-align: -webkit-center;
-		top: 75vh;
+		margin-bottom: 5%;
+		padding-right: 5%;
+		padding-left: 5%;
+		/* top: 75vh; */
+		display: flex;
+		justify-content: center;
+	}
+	.heroButton {
+		color: #fff;
+		background-color: transparent;
+		font-weight: 700;
+	}
+}
+@media screen and (min-width: 1090px) {
+	.heroContainer {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		height: -webkit-fill-available;
+		margin-top: 60px;
+	}
+}
+@media screen and (min-width: 1420px) {
+	.heroContainer {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		height: -webkit-fill-available;
+		margin-top: 60px;
+		/* top: 40vh;
+	position: absolute;
+	left: 50vh; */
+	}
+	.heroButtonAndLine {
+		width: -webkit-fill-available;
+		text-align: -webkit-center;
+		margin-bottom: 5%;
+		padding-right: 5%;
+		padding-left: 5%;
+		/* top: 75vh; */
+		display: flex;
+		justify-content: center;
+	}
+	.heroTitleText {
+		font-family: 'articulat-cf';
+		font-weight: 800;
+		font-size: 130px;
+		line-height: 156px;
+		text-align: center;
+		color: #ffffff;
+		text-transform: capitalize;
 	}
 }
 
@@ -81,17 +133,18 @@
 	left: 50vh; */
 	}
 	.heroTitleText {
-		font-family: 'Lemon Milk Light';
+		font-family: 'articulat-cf';
 		color: #ffffff;
 		font-style: normal;
 		font-weight: 300;
 		font-size: 50px;
 		line-height: 68px;
 		text-align: center;
+		text-transform: capitalize;
 	}
 
 	.heroTextContainer {
-		font-family: 'Lemon Milk Light';
+		font-family: 'articulat-cf';
 		color: #ffffff;
 		font-style: normal;
 		font-weight: 300;

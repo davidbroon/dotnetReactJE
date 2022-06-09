@@ -1,0 +1,13 @@
+.footerContainer {
+	display: flex;
+	justify-content: center;
+	height: 110px;
+}
+.footerCopyright {
+	font-family: 'articulat-cf';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 10px;
+	line-height: 110px;
+	color: #000000;
+}

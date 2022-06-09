@@ -4,16 +4,20 @@ import WhoAreWe from '../../homeComps/TextSectionsFolder/WhoAreWe/whoAreWe';
 import journeyCV from '../../../dummyData/journeyCoreValues.json';
 import LeadersBlock from '../../homeComps/TextSectionsFolder/Leaders/LeadersBlock';
 import WaitListForm from '../../homeComps/WaitListFormFolder/WaitForm';
-import WhatToExpect from '../../homeComps/WhatToExpect/WhatToExpect';
 import CourseOutline from '../../homeComps/CourseOutlineComps/CourseOutline';
+import ResultsText from '../../homeComps/TextSectionsFolder/ResultsText/ResultsText';
+import image1 from '../../../assets/images/faye-cornish-Uq3gTiPlqRo-unsplash.jpg';
+import image2 from '../../../assets/images/ravi-pinisetti-1zikZJVXSfA-unsplash.jpg';
+import image3 from '../../../assets/images/max-van-den-oetelaar-buymYm3RQ3U-unsplash.jpg';
 import './home.style.css';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
+import FullWidthBackgroundImage from '../../backgroundImages/BackGroundImage';
 
 const Home = () => {
 	const cvMap = () => {
 		return journeyCV.map(
 			({ id, valueTitle, valueContent, valueNumber }, index) => (
-				<div key={index}>
+				<div key={index} className='cv'>
 					{CoreValueDisplay(valueTitle, valueContent, valueNumber, id)}
 				</div>
 			),
@@ -79,13 +83,19 @@ const Home = () => {
 				</svg>
 			</div> */}
 			<HeroBlock />
-
 			<WhoAreWe />
-			{WaitListForm('buttonLineTop')}
-			{cvMap()}
+			<div className='coreValueContainer'>
+				<div className='cvLine'></div>
+				{cvMap()}
+			</div>
+
+			{FullWidthBackgroundImage(image1)}
 			<LeadersBlock />
-			<WhatToExpect />
+			{FullWidthBackgroundImage(image2)}
+			{/* <WhatToExpect /> */}
 			<CourseOutline />
+			{FullWidthBackgroundImage(image3)}
+			<ResultsText />
 			{WaitListForm('buttonLineTopLarge')}
 		</div>
 	);
