@@ -9,6 +9,8 @@ const WaitListForm = (borderLine) => {
 	const [display, setDisplay] = useState('none');
 	const [bgColor, setBgColor] = useState('transparent');
 
+	const borderClassname = 'smallScreen ' + borderLine;
+
 	useEffect(() => {
 		open ? setDisplay('inline-flex') : setDisplay('none');
 	}, [open]);
@@ -42,7 +44,7 @@ const WaitListForm = (borderLine) => {
 			const userEmail = values.email;
 			const userName = values.name;
 			const userCountry = values.country;
-			const adminEmail = 'davidbroon13@hotmail.com';
+			const adminEmail = 'hello@journeycommunity.co.uk';
 			const subject = 'Registering Interest in Journey Equip';
 			const emailBody =
 				"Journey Equip, %0D%0A I'd like to Register my interest in the school starting autumn 2022-2023 %0D%0A %0D%0A Name: " +
@@ -66,7 +68,7 @@ const WaitListForm = (borderLine) => {
 	return (
 		<div className='formAndButtonContainer'>
 			<div className='openFormButton' onClick={() => setOpen(!open)}>
-				<div className={borderLine}></div>
+				<div className={borderClassname}></div>
 				<Button type='button' className='styleButton'>
 					Register Your Interest
 				</Button>

@@ -34,11 +34,7 @@
 		top: -127px;
 		width: 50%;
 	}
-	.cvBackNumberContainerRight {
-		/* position: relative;
-		right: -22px;
-		bottom: 74px; */
-	}
+
 	.cvContainerLeft {
 		margin-left: 100px;
 		text-align: left;
@@ -69,11 +65,7 @@
 		top: -128px;
 		width: 50%;
 	}
-	.cvBackNumberContainerLeft {
-		/* position: relative;
-		left: -22px;
-		bottom: 74px; */
-	}
+
 	.cvTitle {
 		font-family: 'articulat-cf';
 		font-style: normal;
@@ -120,7 +112,7 @@
 	}
 	.cvContainerRight.reveal {
 		position: relative;
-		transform: translateX(150px);
+		transform: translateX(-150px);
 		opacity: 0;
 		transition: 1s all ease;
 	}
@@ -148,20 +140,13 @@
 	.cvTitleContainerRight {
 		position: relative;
 		height: 82px;
-		right: -6.4vh;
 		top: -5vh;
-		width: 26vh;
+		padding-left: 7%;
 	}
 	.cvContentContainerRight {
 		position: relative;
 		height: fit-content;
 		top: -7vh;
-	}
-
-	.cvBackNumberContainerRight {
-		/* position: relative;
-		right: 134px;
-		bottom: 140px; */
 	}
 
 	.cvContainerLeft {
@@ -176,9 +161,7 @@
 	.cvTitleContainerLeft {
 		position: relative;
 		height: 82px;
-		/* left: 0.6vh; */
 		top: -5vh;
-		width: 28vh;
 	}
 	.cvContentContainerLeft {
 		position: relative;
@@ -186,11 +169,7 @@
 		height: fit-content;
 		top: -7vh;
 	}
-	.cvBackNumberContainerLeft {
-		/* position: relative;
-		left: -2.4vh;
-		bottom: 134px; */
-	}
+
 	.cvTitle {
 		font-family: 'articulat-cf';
 		font-style: normal;
@@ -234,7 +213,7 @@
 	}
 	.cvContainerRight.reveal {
 		position: relative;
-		transform: translateX(150px);
+		transform: translateX(-150px);
 		opacity: 0;
 		transition: 1s all ease;
 	}

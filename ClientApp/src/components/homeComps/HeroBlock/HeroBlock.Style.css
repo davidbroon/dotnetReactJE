@@ -1,12 +1,15 @@
 @media screen and (min-width: 580px) {
 	.heroImage {
-		background-image: url('../../../assets/images/BG_Image.jpeg');
+		background-image: url('../../../assets/images/heroBg.jpeg');
 		padding-top: 196px;
 		height: 100vh;
 		background-repeat: no-repeat;
 		width: auto;
 		background-position: center;
 		background-size: cover;
+	}
+	.heroImage::before {
+		filter: blur(20px);
 	}
 
 	.heroContainer {
@@ -115,12 +118,15 @@
 
 @media screen and (max-width: 579px) {
 	.heroImage {
-		background-image: url('../../../assets/images/BG_Image.jpeg');
+		background-image: url('../../../assets/images/heroBg.jpeg');
 		height: 100vh;
 		background-repeat: no-repeat;
 		width: auto;
 		background-position: center;
 		background-size: cover;
+	}
+	.heroImage::before {
+		filter: blur(20px);
 	}
 
 	.heroContainer {
@@ -166,13 +172,13 @@
 		align-self: center;
 		gap: 10px;
 		width: 3px;
-		height: 50vh;
+		height: 80%;
 	}
 
 	.heroButtonAndLine {
 		position: absolute;
 		width: -webkit-fill-available;
 		text-align: -webkit-center;
-		top: 60vh;
+		top: 80%;
 	}
 }

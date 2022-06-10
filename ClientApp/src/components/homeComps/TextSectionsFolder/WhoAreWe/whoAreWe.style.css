@@ -50,7 +50,7 @@
 		padding-left: 5vh;
 		padding-right: 5vh;
 		padding-top: 24px;
-		/* margin-top: 10vh; */
+		/* margin-top: 15%; */
 		margin-bottom: -33%;
 	}
 	.whoAreWeLine {
@@ -59,8 +59,8 @@
 		align-self: center;
 		gap: 10px;
 		width: 3px;
-		max-height: 115px;
-		height: 115px;
+		max-height: 180px;
+		height: 180px;
 		background-color: #f4a306;
 	}
 	.whoAreWeContainer {

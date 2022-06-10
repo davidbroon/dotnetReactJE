@@ -256,13 +256,13 @@
 		transition: all 150ms ease-in-out;
 	}
 	.styleButton:hover {
-		background: transparent;
+		background: #fff;
 		border: '1px solid #0195BA';
 		color: #000;
 		box-shadow: 0 0 10px 0 #f4a306 inset, 0 0 10px 4px #f4a306;
 	}
 	.styleButton:focus {
-		background: transparent;
+		background: #fff;
 		color: #000;
 		border: '1px solid #0195BA';
 		box-shadow: 0 0 10px 0 #f4a306 inset, 0 0 10px 4px #f4a306;
