@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, fetch } from 'react';
 import { Button } from 'react-bootstrap';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
@@ -53,8 +53,20 @@ const WaitListForm = (borderLine) => {
 				userEmail +
 				'%0D%0A Country: ' +
 				userCountry;
-			document.location =
-				'mailto:' + adminEmail + '?subject=' + subject + '&body=' + emailBody;
+			
+			fetch('https://localhost:7077/api/email/send', {
+				method: 'POST',
+				headers: { 'Content-type': 'application/json' },
+				body: emailBody,
+			})
+				.then((r) => r.json())
+				.then((res) => {
+					if (res) {
+						console.log('log results',res);
+					}
+				});
+			// document.location =
+			// 	'' + adminEmail + '?subject=' + subject + '&body=' + emailBody;
 		},
 	});
 
