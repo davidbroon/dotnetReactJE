@@ -17,13 +17,12 @@ const WaitListForm = (borderLine) => {
 	}, [open]);
 
 	const api = axios.create({
-		baseURL: `http://localhost:7077/api/email/send`,
+		baseURL: `https://localhost:7077/api/email/send`,
 	});
 
 	const {
 		values,
 		handleSubmit,
-		submitCount,
 		getFieldProps,
 		setValues,
 		touched,
@@ -40,13 +39,6 @@ const WaitListForm = (borderLine) => {
 			email: Yup.string().email('Invalid email address').required('Required'),
 			country: Yup.string().required('Required'),
 		}),
-		// onSubmit={(values, { setSubmitting, resetForm })} => {
-		//     setSubmitting(true);
-		//     values.domain_url = values.domain_url + ".localhost";
-		//     this.props.addTenant(values);
-		//     resetForm();
-		//     setSubmitting(false);
-		//   }}
 
 		onSubmit(values, { setSubmitting, resetForm }) {
 			// We added a `username` value for the user which is everything before @ in their email address.
@@ -55,40 +47,20 @@ const WaitListForm = (borderLine) => {
 				username: `@${values.email.split('@')[0]}`,
 			});
 			setSubmitting(true);
-			//     values.domain_url = values.domain_url + ".localhost";
-			//
+
 			const userEmail = values.email;
 			const userName = values.name;
 			const userCountry = values.country;
-			const adminEmail = 'hello@journeycommunity.co.uk';
-			const subject = 'Registering Interest in Journey Equip';
-			const emailBody =
-				"Journey Equip, %0D%0A I'd like to Register my interest in the school starting autumn 2022-2023 %0D%0A %0D%0A Name: " +
-				userName +
-				'%0D%0A Email: ' +
-				userEmail +
-				'%0D%0A Country: ' +
-				userCountry;
 
-			// fetch('https://localhost:7077/api/email/send', {
-			// 	method: 'POST',
-			// 	headers: { 'Content-type': 'application/json' },
-			// 	body: emailBody,
-			// })
-			// 	.then((r) => r.json())
-			// 	.then((res) => {
-			// 		if (res) {
-			// 			console.log('log results',res);
-			// 		}
-			// 	});
-			// document.location =
-			// 	'' + adminEmail + '?subject=' + subject + '&body=' + emailBody;
-			//SendEmail(values);
 			try {
-				api
-					.post('/', { data: values })
-					.then((res) => console.log('res1', res))
-					.catch((err) => console.log('err1', err));
+				api({
+					method: 'post',
+					data: {
+						UserName: userName,
+						UserCountry: userCountry,
+						UserEmail: userEmail,
+					},
+				}).catch((err) => console.log('err1', err));
 			} catch (error) {
 				console.log('Error...');
 			}

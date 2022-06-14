@@ -32,12 +32,16 @@
     <None Remove="Services\EmailService\" />
     <None Remove="Modals\" />
     <None Remove="Microsoft.AspNetCore.Cors" />
+    <None Remove="Templates\" />
+    <None Remove="Templates\EmailTemplates\" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Services\" />
     <Folder Include="Services\EmailService\" />
     <Folder Include="Modals\" />
+    <Folder Include="Templates\" />
+    <Folder Include="Templates\EmailTemplates\" />
   </ItemGroup>
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
     <!-- Ensure Node.js is installed -->
