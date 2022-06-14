@@ -42,7 +42,7 @@
 		display: flex;
 		padding-right: 10%;
 		padding-left: 10%;
-		padding-bottom: 3%;
+		padding-bottom: 0%;
 		/* margin-top: -6%; */
 		align-items: flex-start;
 		justify-content: space-around;
@@ -54,7 +54,7 @@
 		align-self: center;
 		gap: 10px;
 		width: 6px;
-		max-height: 222px;
+		/* max-height: 222px; */
 		height: 60px;
 	}
 
@@ -68,6 +68,7 @@
 		/* top: 75vh; */
 		display: flex;
 		justify-content: center;
+		flex-direction: column;
 	}
 	.heroButton {
 		color: #fff;
@@ -75,13 +76,16 @@
 		font-weight: 700;
 	}
 }
-@media screen and (min-width: 1090px) {
+@media screen and (min-width: 1095px) {
 	.heroContainer {
 		display: flex;
 		justify-content: space-between;
 		flex-direction: column;
 		height: -webkit-fill-available;
 		margin-top: 60px;
+	}
+	.heroTextContainer {
+		padding-bottom: 4%;
 	}
 }
 @media screen and (min-width: 1420px) {
@@ -90,7 +94,7 @@
 		justify-content: center;
 		flex-direction: column;
 		height: -webkit-fill-available;
-		margin-top: 60px;
+		margin-top: 34vh;
 		/* top: 40vh;
 	position: absolute;
 	left: 50vh; */
@@ -98,7 +102,7 @@
 	.heroButtonAndLine {
 		width: -webkit-fill-available;
 		text-align: -webkit-center;
-		margin-bottom: 5%;
+		margin-bottom: -4vh;
 		padding-right: 5%;
 		padding-left: 5%;
 		/* top: 75vh; */
@@ -108,11 +112,14 @@
 	.heroTitleText {
 		font-family: 'articulat-cf';
 		font-weight: 800;
-		font-size: 130px;
-		line-height: 156px;
+		font-size: 100px;
+		line-height: 120px;
 		text-align: center;
 		color: #ffffff;
 		text-transform: capitalize;
+	}
+	.heroLine {
+		height: 32vh;
 	}
 }
 
@@ -134,9 +141,6 @@
 		justify-content: center;
 		flex-direction: column;
 		height: -webkit-fill-available;
-		/* top: 40vh;
-	position: absolute;
-	left: 50vh; */
 	}
 	.heroTitleText {
 		font-family: 'articulat-cf';
@@ -164,6 +168,7 @@
 		display: flex;
 		align-self: center;
 		align-items: self-end;
+		flex-direction: column;
 	}
 
 	.heroLine {
@@ -172,12 +177,15 @@
 		align-self: center;
 		gap: 10px;
 		width: 3px;
-		height: 80%;
+		height: 17%;
+		color: #fff;
+		margin-top: -2vh;
 	}
 
 	.heroButtonAndLine {
 		position: absolute;
 		width: -webkit-fill-available;
+		height: -webkit-fill-available;
 		text-align: -webkit-center;
 		top: 80%;
 	}

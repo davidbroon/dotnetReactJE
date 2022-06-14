@@ -1,8 +1,9 @@
 import { Fragment } from 'react';
 import { HeaderStyle } from './Header-Style';
-import logo from '../../assets/logos/JE Logo-white.svg';
+import logo from '../../assets/logos/EquipLogo-01.svg';
 import { NavLink, Link } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
+import './Header.style.css';
 
 const Header = () => {
 	if (window.matchMedia('(min-width:600px)').matches) {
@@ -44,7 +45,7 @@ const Header = () => {
 			<HeaderStyle className='navbar sticky-top flex-md-nowrap p-0'>
 				<div className='container'>
 					<Link to='/'>
-						<img style={{ height: '20vh' }} src={logo} alt='Journey Equip' />
+						<img style={{ height: '100px' }} src={logo} alt='Journey Equip' />
 					</Link>
 				</div>
 			</HeaderStyle>

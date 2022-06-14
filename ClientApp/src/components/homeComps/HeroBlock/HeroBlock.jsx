@@ -25,7 +25,7 @@ const HeroBlock = () => {
 					>
 						Register Your Interest
 					</button> */}
-					{/* <div className='heroLine' style={{ background: accent3 }} /> */}
+					<div className='heroLine' style={{ background: accent3 }} />
 				</div>
 			</div>
 		</div>

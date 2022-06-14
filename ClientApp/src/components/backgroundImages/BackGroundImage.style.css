@@ -14,16 +14,22 @@
 	.fullWidthImageTopLine {
 		width: 6px;
 		height: 291px;
-
-		background: #f4a306;
+		background: linear-gradient(
+			180deg,
+			rgba(244, 163, 6, 0) 16.15%,
+			#f4a306 100%
+		);
 		display: flex;
 		align-self: center;
 	}
 	.fullWidthImageBottomLine {
 		width: 6px;
 		height: 291px;
-
-		background: #f4a306;
+		background: linear-gradient(
+			180deg,
+			rgba(244, 163, 6, 1) 0%,
+			rgba(255, 255, 255, 1) 100%
+		);
 		display: flex;
 		align-self: center;
 	}
@@ -43,16 +49,22 @@
 	.fullWidthImageTopLine {
 		width: 3px;
 		height: 89px;
-
-		background: #f4a306;
+		background: linear-gradient(
+			180deg,
+			rgba(244, 163, 6, 0) 16.15%,
+			#f4a306 100%
+		);
 		display: flex;
 		align-self: center;
 	}
 	.fullWidthImageBottomLine {
 		width: 3px;
 		height: 89px;
-
-		background: #f4a306;
+		background: linear-gradient(
+			180deg,
+			rgba(244, 163, 6, 1) 0%,
+			rgba(255, 255, 255, 1) 100%
+		);
 		display: flex;
 		align-self: center;
 	}

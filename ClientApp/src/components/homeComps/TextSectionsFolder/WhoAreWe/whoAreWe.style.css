@@ -1,10 +1,10 @@
 @media screen and (min-width: 580px) {
 	.whoAreWeParagraph {
-		background: linear-gradient(
+		/* background: linear-gradient(
 			179.57deg,
 			#e5e5e4 0.37%,
 			rgba(229, 229, 228, 0) 85.95%
-		);
+		); */
 		font-family: 'articulat-cf';
 		font-style: normal;
 		font-weight: 300;
@@ -25,7 +25,11 @@
 		width: 6px;
 		max-height: 222px;
 		height: 222px;
-		background-color: #f4a306;
+		background: linear-gradient(
+			180deg,
+			rgba(244, 163, 6, 1) 0%,
+			rgba(255, 255, 255, 1) 100%
+		);
 	}
 	.whoAreWeContainer {
 		display: flex;
@@ -35,11 +39,6 @@
 }
 @media screen and (max-width: 579px) {
 	.whoAreWeParagraph {
-		background: linear-gradient(
-			179.57deg,
-			#e5e5e4 0.37%,
-			rgba(229, 229, 228, 0) 85.95%
-		);
 		font-family: 'articulat-cf';
 		font-style: normal;
 		font-weight: 300;
@@ -61,7 +60,11 @@
 		width: 3px;
 		max-height: 180px;
 		height: 180px;
-		background-color: #f4a306;
+		background: linear-gradient(
+			180deg,
+			rgba(244, 163, 6, 1) 0%,
+			rgba(255, 255, 255, 1) 100%
+		);
 	}
 	.whoAreWeContainer {
 		display: flex;

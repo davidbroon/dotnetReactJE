@@ -1,14 +1,9 @@
 @media screen and (min-width: 580px) {
 	.ResultsTextParagraph {
-		background: linear-gradient(
-			179.57deg,
-			#e5e5e4 0.37%,
-			rgba(229, 229, 228, 0) 85.95%
-		);
 		font-family: 'articulat-cf';
 		font-style: normal;
 		font-weight: 300;
-		font-size: 30px;
+		font-size: 25px;
 		line-height: 41px;
 		text-align: center;
 		min-height: 244px;
@@ -35,11 +30,6 @@
 }
 @media screen and (max-width: 579px) {
 	.ResultsTextParagraph {
-		background: linear-gradient(
-			179.57deg,
-			#e5e5e4 0.37%,
-			rgba(229, 229, 228, 0) 85.95%
-		);
 		font-family: 'articulat-cf';
 		font-style: normal;
 		font-weight: 300;

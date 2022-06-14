@@ -9,8 +9,8 @@
 		font-family: 'articulat-cf';
 		font-style: normal;
 		font-weight: 300;
-		font-size: 30px;
-		line-height: 40px;
+		font-size: 25px;
+		line-height: 35px;
 		text-align: center;
 		min-height: 244px;
 		padding-top: 24px;
@@ -22,8 +22,8 @@
 	.leadersTitle {
 		font-style: normal;
 		font-weight: 800;
-		font-size: 70px;
-		line-height: 84px;
+		font-size: 60px;
+		line-height: 74px;
 		display: flex;
 		align-items: center;
 		text-align: center;
