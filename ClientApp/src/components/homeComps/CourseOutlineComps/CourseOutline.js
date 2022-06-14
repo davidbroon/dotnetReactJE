@@ -15,9 +15,11 @@ const CourseOutline = () => {
 		if (id === 1) {
 			return 'courseOutlineItem coTopRow coTopRowSmallScreen';
 		} else if (id < 5) {
-			return 'courseOutlineItem coTopRow';
+			return 'courseOutlineItem coTopRow topReveal ';
+		} else if (id < 9 && id > 5) {
+			return 'courseOutlineItem middleReveal';
 		} else {
-			return 'courseOutlineItem';
+			return 'courseOutlineItem bottomReveal';
 		}
 	};
 
@@ -31,6 +33,56 @@ const CourseOutline = () => {
 			),
 		);
 	};
+
+	function topReveal() {
+		var topReveals = document.querySelectorAll('.topReveal');
+		for (var i = 0; i < topReveals.length; i++) {
+			var windowHeight = window.innerHeight;
+			var elementTop = topReveals[i].getBoundingClientRect().top;
+			var elementVisible = 150;
+
+			if (elementTop < windowHeight - elementVisible) {
+				topReveals[i].classList.add('active');
+			} else {
+				topReveals[i].classList.remove('active');
+			}
+		}
+	}
+
+	function middleReveal() {
+		var middleReveals = document.querySelectorAll('.middleReveal');
+		for (var i = 0; i < middleReveals.length; i++) {
+			var windowHeight = window.innerHeight;
+			var elementTop = middleReveals[i].getBoundingClientRect().top;
+			var elementVisible = 150;
+
+			if (elementTop < windowHeight - elementVisible) {
+				middleReveals[i].classList.add('active');
+			} else {
+				middleReveals[i].classList.remove('active');
+			}
+		}
+	}
+
+	function bottomReveal() {
+		var bottomReveals = document.querySelectorAll('.bottomReveal');
+		for (var i = 0; i < bottomReveals.length; i++) {
+			var windowHeight = window.innerHeight;
+			var elementTop = bottomReveals[i].getBoundingClientRect().top;
+			var elementVisible = 150;
+
+			if (elementTop < windowHeight - elementVisible) {
+				bottomReveals[i].classList.add('active');
+			} else {
+				bottomReveals[i].classList.remove('active');
+			}
+		}
+	}
+
+	window.addEventListener('scroll', topReveal);
+	window.addEventListener('scroll', middleReveal);
+	window.addEventListener('scroll', bottomReveal);
+
 	return (
 		<>
 			<h1 className='coTitle'>What You Will Learn</h1>

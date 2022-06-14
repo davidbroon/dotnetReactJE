@@ -33,6 +33,18 @@
 		padding-right: 12%;
 		font-family: 'articulat-cf';
 	}
+	.reveal {
+		position: relative;
+		/* margin-right: 172px; */
+		transform: translateY(150px);
+		opacity: 0;
+		transition: 1s all ease;
+	}
+
+	.reveal.active {
+		transform: translateY(0);
+		opacity: 1;
+	}
 	/* .leaderLine {
 		display: flex;
 		flex-direction: column;
@@ -96,5 +108,17 @@
 		width: -webkit-fill-available;
 		text-align: -webkit-center;
 		margin-bottom: 59px;
+	}
+	.reveal {
+		position: relative;
+		/* margin-right: 172px; */
+		transform: translateY(50px);
+		opacity: 0;
+		transition: 1s all ease;
+	}
+
+	.reveal.active {
+		transform: translateY(0);
+		opacity: 1;
 	}
 }

@@ -66,6 +66,43 @@
 		margin-right: 5vh;
 		margin-left: 5vh;
 	}
+	.topReveal {
+		position: relative;
+		/* margin-right: 172px; */
+		transform: translateY(-150px);
+		opacity: 0;
+		transition: 1s all ease;
+	}
+
+	.topReveal.active {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	.middleReveal {
+		position: relative;
+		margin-right: 52px;
+		transform: translateX(150px);
+		opacity: 0;
+		transition: 1s all ease;
+	}
+
+	.middleReveal.active {
+		margin-right: 0px;
+		transform: translateX(0);
+		opacity: 1;
+	}
+	.bottomReveal {
+		position: relative;
+		/* margin-right: 172px; */
+		transform: translateY(150px);
+		opacity: 0;
+		transition: 1s all ease;
+	}
+
+	.bottomReveal.active {
+		transform: translateY(0);
+		opacity: 1;
+	}
 
 	#courseOutlineContainer .courseOutlineItem {
 		flex: 1 0 20%;

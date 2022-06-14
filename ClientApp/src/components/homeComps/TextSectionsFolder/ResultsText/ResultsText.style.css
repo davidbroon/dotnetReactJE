@@ -27,6 +27,19 @@
 		flex-direction: column;
 		justify-content: center;
 	}
+
+	.reveal {
+		position: relative;
+		/* margin-right: 172px; */
+		transform: translateY(150px);
+		opacity: 0;
+		transition: 1s all ease;
+	}
+
+	.reveal.active {
+		transform: translateY(0);
+		opacity: 1;
+	}
 }
 @media screen and (max-width: 579px) {
 	.ResultsTextParagraph {
@@ -41,5 +54,17 @@
 		padding-right: 16%;
 		padding-top: 24px;
 		margin-bottom: 12%;
+	}
+	.reveal {
+		position: relative;
+		/* margin-right: 172px; */
+		transform: translateY(50px);
+		opacity: 0;
+		transition: 1s all ease;
+	}
+
+	.reveal.active {
+		transform: translateY(0);
+		opacity: 1;
 	}
 }
