@@ -14,11 +14,11 @@
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'JourneyEquip' " />
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'dotnetReactJE' " />
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.SpaProxy" Version="6.0.3" />
     <PackageReference Include="MailKit" Version="3.2.0" />
     <PackageReference Include="MimeKit" Version="3.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,6 +31,7 @@
     <None Remove="Services\" />
     <None Remove="Services\EmailService\" />
     <None Remove="Modals\" />
+    <None Remove="Microsoft.AspNetCore.Cors" />
   </ItemGroup>
 
   <ItemGroup>

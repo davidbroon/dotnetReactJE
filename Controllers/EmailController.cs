@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using MailKit.Net.Smtp;
 using MailKit.Security;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using MimeKit;
 using MimeKit.Text;
@@ -14,9 +15,10 @@ namespace JourneyEquip.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-
+    [EnableCors()]
     public class EmailController : ControllerBase
     {
+
         public readonly IEmailService _emailService;
         public EmailController(IEmailService emailService)
         {
@@ -27,7 +29,7 @@ namespace JourneyEquip.Controllers
         public IActionResult SendEmail(EmailDto request)
         {
             try
-            {
+            { 
                 _emailService.SendEmail(request);
 
                 return Ok();

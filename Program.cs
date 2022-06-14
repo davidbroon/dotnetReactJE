@@ -8,6 +8,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddCors(options =>
+    {
+        options.AddPolicy("MyPolicy",
+            op2 =>
+                op2.WithOrigins("localhost:7077"));
+    });
 
 var app = builder.Build();
 
@@ -21,6 +27,11 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
+app.UseCors(options =>
+{
+    options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+});
+app.UseCors("MyPolicy");
 
 
 app.MapControllerRoute(

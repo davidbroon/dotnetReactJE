@@ -2,6 +2,7 @@
 	"name": "journey-equip",
 	"version": "0.1.0",
 	"private": true,
+	"proxy": "http://localhost:7077",
 	"dependencies": {
 		"http-proxy-middleware": "^0.19.1",
 		"jquery": "^3.5.1",

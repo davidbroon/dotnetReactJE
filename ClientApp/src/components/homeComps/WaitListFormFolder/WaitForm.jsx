@@ -3,6 +3,7 @@ import { Button } from 'react-bootstrap';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import './waitListForm.style.css';
+import axios from 'axios';
 
 const WaitListForm = (borderLine) => {
 	const [open, setOpen] = useState(false);
@@ -14,6 +15,10 @@ const WaitListForm = (borderLine) => {
 	useEffect(() => {
 		open ? setDisplay('inline-flex') : setDisplay('none');
 	}, [open]);
+
+	const api = axios.create({
+		baseURL: `http://localhost:7077/api/email/send`,
+	});
 
 	const {
 		values,
@@ -35,12 +40,23 @@ const WaitListForm = (borderLine) => {
 			email: Yup.string().email('Invalid email address').required('Required'),
 			country: Yup.string().required('Required'),
 		}),
-		onSubmit(values) {
+		// onSubmit={(values, { setSubmitting, resetForm })} => {
+		//     setSubmitting(true);
+		//     values.domain_url = values.domain_url + ".localhost";
+		//     this.props.addTenant(values);
+		//     resetForm();
+		//     setSubmitting(false);
+		//   }}
+
+		onSubmit(values, { setSubmitting, resetForm }) {
 			// We added a `username` value for the user which is everything before @ in their email address.
 			setValues({
 				...values,
 				username: `@${values.email.split('@')[0]}`,
 			});
+			setSubmitting(true);
+			//     values.domain_url = values.domain_url + ".localhost";
+			//
 			const userEmail = values.email;
 			const userName = values.name;
 			const userCountry = values.country;
@@ -53,20 +69,31 @@ const WaitListForm = (borderLine) => {
 				userEmail +
 				'%0D%0A Country: ' +
 				userCountry;
-			
-			fetch('https://localhost:7077/api/email/send', {
-				method: 'POST',
-				headers: { 'Content-type': 'application/json' },
-				body: emailBody,
-			})
-				.then((r) => r.json())
-				.then((res) => {
-					if (res) {
-						console.log('log results',res);
-					}
-				});
+
+			// fetch('https://localhost:7077/api/email/send', {
+			// 	method: 'POST',
+			// 	headers: { 'Content-type': 'application/json' },
+			// 	body: emailBody,
+			// })
+			// 	.then((r) => r.json())
+			// 	.then((res) => {
+			// 		if (res) {
+			// 			console.log('log results',res);
+			// 		}
+			// 	});
 			// document.location =
 			// 	'' + adminEmail + '?subject=' + subject + '&body=' + emailBody;
+			//SendEmail(values);
+			try {
+				api
+					.post('/', { data: values })
+					.then((res) => console.log('res1', res))
+					.catch((err) => console.log('err1', err));
+			} catch (error) {
+				console.log('Error...');
+			}
+			resetForm();
+			setSubmitting(false);
 		},
 	});
 
