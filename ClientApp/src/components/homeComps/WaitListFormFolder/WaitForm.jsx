@@ -1,4 +1,4 @@
-import { useEffect, useState, fetch } from 'react';
+import { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
@@ -86,7 +86,7 @@ const WaitListForm = (borderLine) => {
 			</div>
 			<div className='formWrapper' style={{ display: display }}>
 				<form className='baseForm' onSubmit={handleSubmit} noValidate>
-					<div className='formRow col-1'>
+					<div className='formRow'>
 						<div className='formFieldWrap'>
 							<label className='formFieldLabel' htmlFor='name'>
 								<span className='errorMessage'>
@@ -105,7 +105,7 @@ const WaitListForm = (borderLine) => {
 							</div>
 						</div>
 					</div>
-					<div className='formRow col-1'>
+					<div className='formRow'>
 						<div className='formFieldWrap'>
 							<label className='formFieldLabel' htmlFor='email'>
 								<span className='errorMessage'>
@@ -141,7 +141,7 @@ const WaitListForm = (borderLine) => {
 							/>
 						</div>
 					</div>
-					<div className='formRow col-1'>
+					<div className='formRow'>
 						<button type='submit'>Submit</button>
 					</div>
 				</form>
