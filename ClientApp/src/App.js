@@ -4,21 +4,24 @@ import './App.css';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Home from './components/pages/home/Home';
+import { GlobalContextProvider } from './context/GlobalContext';
 //import Dashboard from "./components/Dashboard/Dashboard";
 
 function App() {
 	return (
 		<div className='App'>
-			<Router>
-				<Header />
-				<div className='appContainer'>
-					<Routes>
-						<Route path='/' element={<Home />} />
-						{/* <Route path="/dashboard" element={<Dashboard />} /> */}
-					</Routes>
-				</div>
-				<Footer />
-			</Router>
+			<GlobalContextProvider>
+				<Router>
+					<Header />
+					<div className='appContainer'>
+						<Routes>
+							<Route path='/' element={<Home />} />
+							{/* <Route path="/dashboard" element={<Dashboard />} /> */}
+						</Routes>
+					</div>
+					<Footer />
+				</Router>
+			</GlobalContextProvider>
 		</div>
 	);
 }
