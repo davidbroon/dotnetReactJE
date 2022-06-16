@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
+import { GlobalContext } from '../../../context/GlobalContext';
 import { Button } from 'react-bootstrap';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
@@ -6,15 +7,17 @@ import './waitListForm.style.css';
 import axios from 'axios';
 
 const WaitListForm = (borderLine) => {
-	const [open, setOpen] = useState(false);
+	const [formOpen, setFormOpen] = useContext(GlobalContext);
+	// const [formOpen, setFormOpen] = useState(false);
 	const [display, setDisplay] = useState('none');
 	const [bgColor, setBgColor] = useState('transparent');
 
 	const borderClassname = 'smallScreen ' + borderLine;
 
 	useEffect(() => {
-		open ? setDisplay('inline-flex') : setDisplay('none');
-	}, [open]);
+		formOpen ? setDisplay('inline-flex') : setDisplay('none');
+		formOpen ? setBgColor('#17223c10') : setDisplay('none');
+	}, [formOpen]);
 
 	const api = axios.create({
 		baseURL: `https://localhost:7077/api/email/send`,
@@ -78,7 +81,7 @@ const WaitListForm = (borderLine) => {
 
 	return (
 		<div className='formAndButtonContainer'>
-			<div className='openFormButton' onClick={() => setOpen(!open)}>
+			<div className='openFormButton' onClick={() => setFormOpen(!formOpen)}>
 				<div className={borderClassname}></div>
 				<Button type='button' className='styleButton'>
 					Register Your Interest
