@@ -1,13 +1,17 @@
 import './HeroBlock.Style.css';
 import { accent3, accent2 } from '../../../style/colorConstants';
 import { GlobalContext } from '../../../context/GlobalContext';
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import WaitListForm from '../WaitListFormFolder/WaitForm';
 
 const HeroBlock = () => {
 	const [formOpen] = useContext(GlobalContext);
+	const [lineDisplay, setLineDisplay] = useState('visible');
 
-	const lineDisplay = formOpen ? 'hidden' : 'visible';
+	useEffect(() => {
+		formOpen ? setLineDisplay('hidden') : setLineDisplay('visible');
+		console.log(lineDisplay);
+	}, [formOpen]);
 	const pStyles = formOpen ? { height: '14vh', fontSize: '80%' } : {};
 	console.log(lineDisplay);
 	return (
@@ -36,7 +40,7 @@ const HeroBlock = () => {
 					</button> */}
 					<div
 						className='heroLine'
-						style={{ background: accent3, visibility: { lineDisplay } }}
+						style={{ background: accent3, visibility: lineDisplay }}
 					/>
 				</div>
 			</div>
