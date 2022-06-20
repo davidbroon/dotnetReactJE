@@ -33,7 +33,7 @@
 	}
 	.cvTitleContainerLeft {
 		position: relative;
-		height: 95px;
+		height: fit-content;
 		left: -22px;
 		top: -105px;
 	}

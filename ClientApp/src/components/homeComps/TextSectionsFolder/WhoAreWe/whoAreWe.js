@@ -5,12 +5,16 @@ import './whoAreWe.style.css';
 
 const WhoAreWe = () => {
 	const [formOpen] = useContext(GlobalContext);
-	const lineDisplay = formOpen ? 'hidden' : 'visible';
+	const [lineDisplay, setLineDisplay] = useState('visible');
+
+	useEffect(() => {
+		formOpen ? setLineDisplay('hidden') : setLineDisplay('visible');
+	}, [formOpen]);
 
 	return (
 		<>
 			<div className='whoAreWeContainer'>
-				<div className='whoAreWeLine' style={{ visibility: { lineDisplay } }} />
+				<div className='whoAreWeLine' style={{ visibility: lineDisplay }} />
 				<p className='whoAreWeParagraph' id='aboutUsSection'>
 					Journey Equip is a new ministry school run by Journey Community Church
 					located in Antrim, Northern Ireland.

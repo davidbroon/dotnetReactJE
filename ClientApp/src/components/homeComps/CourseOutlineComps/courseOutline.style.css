@@ -80,8 +80,8 @@
 	}
 	.middleReveal {
 		position: relative;
-		margin-right: 52px;
-		transform: translateX(150px);
+		margin-right: 80px;
+		transform: translateX(-150px);
 		opacity: 0;
 		transition: 1s all ease;
 	}
